@@ -11,7 +11,7 @@ pipeline
 agent any
 
 options{
-buildDiscarder(logRotator(numToKeepStr = '4', daysToKeepStr = '7', artifactDaysToKeepStr = '7', artifactNumToKeepStr = '4' ))
+buildDiscarder(logRotator(numToKeepStr: '4', daysToKeepStr: '7', artifactDaysToKeepStr: '7', artifactNumToKeepStr: '4'))
 }
 
 tools { nodejs "npm"}
