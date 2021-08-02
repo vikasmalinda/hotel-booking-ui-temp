@@ -79,11 +79,12 @@ steps{
 echo 'Deploy Docker Image in AWS '
 }
 }
+
+}
 post {
 always {
 // Send Notification on any build status (SUCCESS, FAILURE, UNSTABLE)
 sendNotification(RECIPIENT_EMAIL)
-}
 }
 }
 }
