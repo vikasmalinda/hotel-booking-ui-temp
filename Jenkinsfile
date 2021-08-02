@@ -38,10 +38,11 @@ sh 'npm run coverage'
 
 
 stage('SonarQube Analysis') {
+    steps{
 script {
     def scannerHome = tool 'SonarScanner 4.0';
 }
-steps{
+
 withSonarQubeEnv('My SonarQube Server') { 
 // If you have configured more than one global server connection,
 //you can specify its name
