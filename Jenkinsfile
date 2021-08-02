@@ -41,14 +41,14 @@ stage('SonarQube Analysis') {
 script {
     def scannerHome = tool 'SonarScanner 4.0';
 }
-
+steps{
 withSonarQubeEnv('My SonarQube Server') { 
 // If you have configured more than one global server connection,
 //you can specify its name
 sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=${SONAR_PROJECT_KEY} -Dsonar.sources=."
 }
 }
-
+}
 stage('Quality Gate') { // SonarQube Quality Gate Stage works only when Webhook enabled
 steps {
 // Timeout will abort pipeline job after specified time
