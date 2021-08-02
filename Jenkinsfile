@@ -1,6 +1,6 @@
 def REPOSITORY_NAME = 'psi-asde-batch-6' // Name of the repository in AWS ECR or Docker Hub
-def SONAR_SERVER_NAME = 'SonarQube PSIASD' // SonarQube Server Name defined in Jenkins Configuration
-def SONAR_PROJECT_KEY = "PSIASD-${MICROSERVICE_NAME}" // SonarQube Project Key
+def SONAR_SERVER_NAME = 'SonarQube demo' // SonarQube Server Name defined in Jenkins Configuration
+def SONAR_PROJECT_KEY = "demo" // SonarQube Project Key
 def QUALITY_GATE_TIMEOUT = 10 // Quality Gate timeout time in minutes
 def RECIPIENT_EMAIL = 'recipient@example.com' // Email Address of Recipient
 
