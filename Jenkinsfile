@@ -3,7 +3,7 @@ def SONAR_SERVER_NAME = 'SonarQube demo' // SonarQube Server Name defined in Jen
 def SONAR_PROJECT_KEY = "demo" // SonarQube Project Key
 def QUALITY_GATE_TIMEOUT = 10 // Quality Gate timeout time in minutes
 def RECIPIENT_EMAIL = 'recipient@example.com' // Email Address of Recipient
-
+def MICROSERVICE_NAME = 'ui'
 
 
 pipeline
