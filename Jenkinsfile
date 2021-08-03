@@ -41,12 +41,13 @@ stage('SonarQube Analysis') {
     steps{
 script {
     def scannerHome = tool 'SonarScanner 4.0';
-}
+
 
 withSonarQubeEnv(SONAR_SERVER_NAME) { 
 // If you have configured more than one global server connection,
 //you can specify its name
 sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=${SONAR_PROJECT_KEY} -Dsonar.sources=."
+}
 }
 }
 }
