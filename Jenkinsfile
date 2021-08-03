@@ -71,7 +71,7 @@ error "Quality Gate Failed"
 
 stage ('Docker Build'){
 steps{
-sh "docker build . -t ${REPOSITORY_NAME}/${MICROSERVICE_NAME}" 
+sh "docker build -f Dockerfile -t ${REPOSITORY_NAME}/${MICROSERVICE_NAME}" 
 }
 }
 
